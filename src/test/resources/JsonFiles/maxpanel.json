@@ -1,0 +1,49 @@
+{
+  "filter": [
+    {
+      "filtername": "Compact",
+      "filtervalue": "FALSE"
+    },
+    {
+      "filtername": "ClippedSolarTiles",
+      "filtervalue": "FALSE"
+    },
+    {
+      "filtername": "WidthFactorsPasiveTiles",
+      "filtervalue": "6"
+    },
+    {
+      "filtername": "WidthFactorsActiveTiles",
+      "filtervalue": "1"
+    },
+    {
+      "filtername": "PVRuleXNoEdge",
+      "filtervalue": "TRUE"
+    },
+    {
+      "filtername": "PVRuleYNoEdge",
+      "filtervalue": "TRUE"
+    },
+    {
+      "filtername": "PVRuleNoObstructionSide",
+      "filtervalue": "TRUE"
+    }
+  ],
+  "offsets": {
+    "eave" : 0,
+    "rake" : 1,
+    "ridge" : 2,
+    "valley" : 2,
+    "obstruction" : 2,
+    "default" : 1
+  },
+  "paneltype": "SolarTile",
+  "overlapx": 0,
+  "overlapy": 0.358,
+  "panelsize": {
+    "height": 14.02,
+    "width": 45.12
+  },
+  "pattern": "Staggered",
+  "resultmode": "3D"
+}

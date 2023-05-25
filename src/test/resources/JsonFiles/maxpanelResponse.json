@@ -1,0 +1,54 @@
+{
+  "ActiveSubsizes": 1,
+  "PanelType": "Solar Tile",
+  "PassiveSubsizes": 6,
+  "layout": [
+    {
+      "activepanels": 77,
+      "designator": "D",
+      "panels": [
+        {
+          "Active": false,
+          "SAV": 0.9988440909090922,
+          "TOF": 0.8021241515484124,
+          "TSRF": 0.8011969689496009,
+          "azimuth": 1.5707963267948966,
+          "cell": 1,
+          "center": [
+            86.14737706411849,
+            36.458906782375486,
+            6.175622940063477
+          ],
+          "data": [
+            {
+              "_point": {
+                "x": 86.7315434971185,
+                "y": 35.20557395037549,
+                "z": 6.175622940063477
+              }
+            }
+          ],
+          "height": 1.1683328659999999,
+          "id": 1,
+          "orientation": "portrait",
+          "pitch": 0,
+          "row": 1,
+          "width": 2.506665664,
+          "widthFID": 4,
+          "widthSize": 0.6666666666666666
+        }
+      ],
+      "pasivePanelsBySize": {
+        "1/6": 36,
+        "2/6": 8,
+        "3/6": 6,
+        "4/6": 13,
+        "5/6": 10,
+        "6/6": 1
+      },
+      "pasivepanels": 74
+    }
+  ],
+  "reportid": "44842266",
+  "version": "1.0"
+}
