@@ -12,6 +12,7 @@
     <classes><class name="TestCases.MaxPanelAPI">
         <methods>
             <include name="validateMaxPanel"/>
+            <include name="maxpanelSchemaValidation"/>
         </methods></class>
     </classes>
 </test>

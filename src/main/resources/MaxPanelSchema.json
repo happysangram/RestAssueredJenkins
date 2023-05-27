@@ -1,0 +1,595 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "ActiveSubsizes",
+    "PanelType",
+    "PassiveSubsizes",
+    "layout",
+    "reportid",
+    "version"
+  ],
+  "properties": {
+    "ActiveSubsizes": {
+      "type": "integer",
+      "default": 0,
+      "title": "The ActiveSubsizes Schema",
+      "examples": [
+        1
+      ]
+    },
+    "PanelType": {
+      "type": "string",
+      "default": "",
+      "title": "The PanelType Schema",
+      "examples": [
+        "Solar Tile"
+      ]
+    },
+    "PassiveSubsizes": {
+      "type": "integer",
+      "default": 0,
+      "title": "The PassiveSubsizes Schema",
+      "examples": [
+        6
+      ]
+    },
+    "layout": {
+      "type": "array",
+      "default": [],
+      "title": "The layout Schema",
+      "items": {
+        "type": "object",
+        "default": {},
+        "title": "A Schema",
+        "required": [
+          "activepanels",
+          "designator",
+          "panels",
+          "pasivePanelsBySize",
+          "pasivepanels"
+        ],
+        "properties": {
+          "activepanels": {
+            "type": "integer",
+            "default": 0,
+            "title": "The activepanels Schema",
+            "examples": [
+              77
+            ]
+          },
+          "designator": {
+            "type": "string",
+            "default": "",
+            "title": "The designator Schema",
+            "examples": [
+              "D"
+            ]
+          },
+          "panels": {
+            "type": "array",
+            "default": [],
+            "title": "The panels Schema",
+            "items": {
+              "type": "object",
+              "default": {},
+              "title": "A Schema",
+              "required": [
+                "Active",
+                "SAV",
+                "TOF",
+                "TSRF",
+                "azimuth",
+                "cell",
+                "center",
+                "data",
+                "height",
+                "id",
+                "orientation",
+                "pitch",
+                "row",
+                "width",
+                "widthFID",
+                "widthSize"
+              ],
+              "properties": {
+                "Active": {
+                  "type": "boolean",
+                  "default": false,
+                  "title": "The Active Schema",
+                  "examples": [
+                    false
+                  ]
+                },
+                "SAV": {
+                  "type": "number",
+                  "default": 0.0,
+                  "title": "The SAV Schema",
+                  "examples": [
+                    0.9988440909090922
+                  ]
+                },
+                "TOF": {
+                  "type": "number",
+                  "default": 0.0,
+                  "title": "The TOF Schema",
+                  "examples": [
+                    0.8021241515484124
+                  ]
+                },
+                "TSRF": {
+                  "type": "number",
+                  "default": 0.0,
+                  "title": "The TSRF Schema",
+                  "examples": [
+                    0.8011969689496009
+                  ]
+                },
+                "azimuth": {
+                  "type": "number",
+                  "default": 0.0,
+                  "title": "The azimuth Schema",
+                  "examples": [
+                    1.5707963267948966
+                  ]
+                },
+                "cell": {
+                  "type": "integer",
+                  "default": 0,
+                  "title": "The cell Schema",
+                  "examples": [
+                    1
+                  ]
+                },
+                "center": {
+                  "type": "array",
+                  "default": [],
+                  "title": "The center Schema",
+                  "items": {
+                    "type": "number",
+                    "title": "A Schema",
+                    "examples": [
+                      86.14737706411849,
+                      36.458906782375486,
+                      6.175622940063477
+                    ]
+                  },
+                  "examples": [
+                    [86.14737706411849,
+                      36.458906782375486,
+                      6.175622940063477
+                    ]
+                  ]
+                },
+                "data": {
+                  "type": "array",
+                  "default": [],
+                  "title": "The data Schema",
+                  "items": {
+                    "type": "object",
+                    "default": {},
+                    "title": "A Schema",
+                    "required": [
+                      "_point"
+                    ],
+                    "properties": {
+                      "_point": {
+                        "type": "object",
+                        "default": {},
+                        "title": "The _point Schema",
+                        "required": [
+                          "x",
+                          "y",
+                          "z"
+                        ],
+                        "properties": {
+                          "x": {
+                            "type": "number",
+                            "default": 0.0,
+                            "title": "The x Schema",
+                            "examples": [
+                              86.7315434971185
+                            ]
+                          },
+                          "y": {
+                            "type": "number",
+                            "default": 0.0,
+                            "title": "The y Schema",
+                            "examples": [
+                              35.20557395037549
+                            ]
+                          },
+                          "z": {
+                            "type": "number",
+                            "default": 0.0,
+                            "title": "The z Schema",
+                            "examples": [
+                              6.175622940063477
+                            ]
+                          }
+                        },
+                        "examples": [{
+                          "x": 86.7315434971185,
+                          "y": 35.20557395037549,
+                          "z": 6.175622940063477
+                        }]
+                      }
+                    },
+                    "examples": [{
+                      "_point": {
+                        "x": 86.7315434971185,
+                        "y": 35.20557395037549,
+                        "z": 6.175622940063477
+                      }
+                    }]
+                  },
+                  "examples": [
+                    [{
+                      "_point": {
+                        "x": 86.7315434971185,
+                        "y": 35.20557395037549,
+                        "z": 6.175622940063477
+                      }
+                    }]
+                  ]
+                },
+                "height": {
+                  "type": "number",
+                  "default": 0.0,
+                  "title": "The height Schema",
+                  "examples": [
+                    1.1683328659999999
+                  ]
+                },
+                "id": {
+                  "type": "integer",
+                  "default": 0,
+                  "title": "The id Schema",
+                  "examples": [
+                    1
+                  ]
+                },
+                "orientation": {
+                  "type": "string",
+                  "default": "",
+                  "title": "The orientation Schema",
+                  "examples": [
+                    "portrait"
+                  ]
+                },
+                "pitch": {
+                  "type": "integer",
+                  "default": 0,
+                  "title": "The pitch Schema",
+                  "examples": [
+                    0
+                  ]
+                },
+                "row": {
+                  "type": "integer",
+                  "default": 0,
+                  "title": "The row Schema",
+                  "examples": [
+                    1
+                  ]
+                },
+                "width": {
+                  "type": "number",
+                  "default": 0.0,
+                  "title": "The width Schema",
+                  "examples": [
+                    2.506665664
+                  ]
+                },
+                "widthFID": {
+                  "type": "integer",
+                  "default": 0,
+                  "title": "The widthFID Schema",
+                  "examples": [
+                    4
+                  ]
+                },
+                "widthSize": {
+                  "type": "number",
+                  "default": 0.0,
+                  "title": "The widthSize Schema",
+                  "examples": [
+                    0.6666666666666666
+                  ]
+                }
+              },
+              "examples": [{
+                "Active": false,
+                "SAV": 0.9988440909090922,
+                "TOF": 0.8021241515484124,
+                "TSRF": 0.8011969689496009,
+                "azimuth": 1.5707963267948966,
+                "cell": 1,
+                "center": [
+                  86.14737706411849,
+                  36.458906782375486,
+                  6.175622940063477
+                ],
+                "data": [{
+                  "_point": {
+                    "x": 86.7315434971185,
+                    "y": 35.20557395037549,
+                    "z": 6.175622940063477
+                  }
+                }],
+                "height": 1.1683328659999999,
+                "id": 1,
+                "orientation": "portrait",
+                "pitch": 0,
+                "row": 1,
+                "width": 2.506665664,
+                "widthFID": 4,
+                "widthSize": 0.6666666666666666
+              }]
+            },
+            "examples": [
+              [{
+                "Active": false,
+                "SAV": 0.9988440909090922,
+                "TOF": 0.8021241515484124,
+                "TSRF": 0.8011969689496009,
+                "azimuth": 1.5707963267948966,
+                "cell": 1,
+                "center": [
+                  86.14737706411849,
+                  36.458906782375486,
+                  6.175622940063477
+                ],
+                "data": [{
+                  "_point": {
+                    "x": 86.7315434971185,
+                    "y": 35.20557395037549,
+                    "z": 6.175622940063477
+                  }
+                }],
+                "height": 1.1683328659999999,
+                "id": 1,
+                "orientation": "portrait",
+                "pitch": 0,
+                "row": 1,
+                "width": 2.506665664,
+                "widthFID": 4,
+                "widthSize": 0.6666666666666666
+              }]
+            ]
+          },
+          "pasivePanelsBySize": {
+            "type": "object",
+            "default": {},
+            "title": "The pasivePanelsBySize Schema",
+            "required": [
+              "1/6",
+              "2/6",
+              "3/6",
+              "4/6",
+              "5/6",
+              "6/6"
+            ],
+            "properties": {
+              "1/6": {
+                "type": "integer",
+                "default": 0,
+                "title": "The 1/6 Schema",
+                "examples": [
+                  36
+                ]
+              },
+              "2/6": {
+                "type": "integer",
+                "default": 0,
+                "title": "The 2/6 Schema",
+                "examples": [
+                  8
+                ]
+              },
+              "3/6": {
+                "type": "integer",
+                "default": 0,
+                "title": "The 3/6 Schema",
+                "examples": [
+                  6
+                ]
+              },
+              "4/6": {
+                "type": "integer",
+                "default": 0,
+                "title": "The 4/6 Schema",
+                "examples": [
+                  13
+                ]
+              },
+              "5/6": {
+                "type": "integer",
+                "default": 0,
+                "title": "The 5/6 Schema",
+                "examples": [
+                  10
+                ]
+              },
+              "6/6": {
+                "type": "integer",
+                "default": 0,
+                "title": "The 6/6 Schema",
+                "examples": [
+                  1
+                ]
+              }
+            },
+            "examples": [{
+              "1/6": 36,
+              "2/6": 8,
+              "3/6": 6,
+              "4/6": 13,
+              "5/6": 10,
+              "6/6": 1
+            }]
+          },
+          "pasivepanels": {
+            "type": "integer",
+            "default": 0,
+            "title": "The pasivepanels Schema",
+            "examples": [
+              74
+            ]
+          }
+        },
+        "examples": [{
+          "activepanels": 77,
+          "designator": "D",
+          "panels": [{
+            "Active": false,
+            "SAV": 0.9988440909090922,
+            "TOF": 0.8021241515484124,
+            "TSRF": 0.8011969689496009,
+            "azimuth": 1.5707963267948966,
+            "cell": 1,
+            "center": [
+              86.14737706411849,
+              36.458906782375486,
+              6.175622940063477
+            ],
+            "data": [{
+              "_point": {
+                "x": 86.7315434971185,
+                "y": 35.20557395037549,
+                "z": 6.175622940063477
+              }
+            }],
+            "height": 1.1683328659999999,
+            "id": 1,
+            "orientation": "portrait",
+            "pitch": 0,
+            "row": 1,
+            "width": 2.506665664,
+            "widthFID": 4,
+            "widthSize": 0.6666666666666666
+          }],
+          "pasivePanelsBySize": {
+            "1/6": 36,
+            "2/6": 8,
+            "3/6": 6,
+            "4/6": 13,
+            "5/6": 10,
+            "6/6": 1
+          },
+          "pasivepanels": 74
+        }]
+      },
+      "examples": [
+        [{
+          "activepanels": 77,
+          "designator": "D",
+          "panels": [{
+            "Active": false,
+            "SAV": 0.9988440909090922,
+            "TOF": 0.8021241515484124,
+            "TSRF": 0.8011969689496009,
+            "azimuth": 1.5707963267948966,
+            "cell": 1,
+            "center": [
+              86.14737706411849,
+              36.458906782375486,
+              6.175622940063477
+            ],
+            "data": [{
+              "_point": {
+                "x": 86.7315434971185,
+                "y": 35.20557395037549,
+                "z": 6.175622940063477
+              }
+            }],
+            "height": 1.1683328659999999,
+            "id": 1,
+            "orientation": "portrait",
+            "pitch": 0,
+            "row": 1,
+            "width": 2.506665664,
+            "widthFID": 4,
+            "widthSize": 0.6666666666666666
+          }],
+          "pasivePanelsBySize": {
+            "1/6": 36,
+            "2/6": 8,
+            "3/6": 6,
+            "4/6": 13,
+            "5/6": 10,
+            "6/6": 1
+          },
+          "pasivepanels": 74
+        }]
+      ]
+    },
+    "reportid": {
+      "type": "string",
+      "default": "",
+      "title": "The reportid Schema",
+      "examples": [
+        "44842266"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "default": "",
+      "title": "The version Schema",
+      "examples": [
+        "1.0"
+      ]
+    }
+  },
+  "examples": [{
+    "ActiveSubsizes": 1,
+    "PanelType": "Solar Tile",
+    "PassiveSubsizes": 6,
+    "layout": [{
+      "activepanels": 77,
+      "designator": "D",
+      "panels": [{
+        "Active": false,
+        "SAV": 0.9988440909090922,
+        "TOF": 0.8021241515484124,
+        "TSRF": 0.8011969689496009,
+        "azimuth": 1.5707963267948966,
+        "cell": 1,
+        "center": [
+          86.14737706411849,
+          36.458906782375486,
+          6.175622940063477
+        ],
+        "data": [{
+          "_point": {
+            "x": 86.7315434971185,
+            "y": 35.20557395037549,
+            "z": 6.175622940063477
+          }
+        }],
+        "height": 1.1683328659999999,
+        "id": 1,
+        "orientation": "portrait",
+        "pitch": 0,
+        "row": 1,
+        "width": 2.506665664,
+        "widthFID": 4,
+        "widthSize": 0.6666666666666666
+      }],
+      "pasivePanelsBySize": {
+        "1/6": 36,
+        "2/6": 8,
+        "3/6": 6,
+        "4/6": 13,
+        "5/6": 10,
+        "6/6": 1
+      },
+      "pasivepanels": 74
+    }],
+    "reportid": "44842266",
+    "version": "1.0"
+  }]
+}

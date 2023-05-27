@@ -19,6 +19,7 @@ public class Specifications extends BaseTest {
                 .baseUri(properties.getProperty("BaseUrl"))
                 .basePath(BasePath.maxpanel)
                 .contentType(ContentType.JSON)
+                .filter(restAssuredFilter)
                 .log().all();
     }
     public static ResponseSpecification responseSpec(){

@@ -8,6 +8,7 @@ import Pojo.ResponsePojo.Layout;
 import Pojo.ResponsePojo.ResponseMaxpanel;
 import RestAPIs.Constants;
 import RestAPIs.RestResource;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import io.restassured.path.json.JsonPath;
@@ -18,11 +19,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class MaxPanelAPI extends BaseTest {
     private Maxpanel maxpanel;
@@ -55,6 +59,7 @@ public class MaxPanelAPI extends BaseTest {
         queryParam.put("reportid","44842266");
 
         Response response=RestResource.POST(objectPojo1,null,queryParam, Constants.maxpanelPath);
+      //  response.body(matchesJsonSchemaInClasspath(""));
         System.out.println(response.asString());
 
         ObjectMapper objectMapperdeserial=new ObjectMapper();
@@ -70,16 +75,24 @@ public class MaxPanelAPI extends BaseTest {
         for(Layout layouts1:layouts){
 
             if(layouts1.getActivepanels().equals(77)){
-                Assert.assertEquals(layouts1.getDesignator(),"Da");
+                Assert.assertEquals(layouts1.getDesignator(),"D");
             }
 
         }
         System.out.println("Test Failed");
 
         //JsonPath jsonPath= response.getBody().jsonPath();
+    }
 
+    @Test
+    public void maxpanelSchemaValidation() throws JsonProcessingException, FileNotFoundException {
 
+        ObjectMapper objectMapper=new ObjectMapper();
+        String objectPojo1=objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(maxpanel);
 
+        HashMap<String,String> queryParam=new HashMap<>();
+        queryParam.put("reportid","44842266");
+        RestResource.POSTSchema(objectPojo1,null,queryParam, Constants.maxpanelPath);
 
     }
 }
