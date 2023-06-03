@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-
     <listeners>
-        <listener class-name="Listeners.AnnotationTransformer"/>
-        <listener class-name="Listeners.AnnotationTransformer"/>
+        <listener class-name="Reporting.TestListener"/>
     </listeners>
+    <test verbose="2" preserve-order="true"
+          name="/Users/sangram.das/GIT/RestAssueredAutomationJenkins/src/test/API/GenericFramework/Tests/Airlines.java">
+        <classes>
+            <class name="GenericFramework.Tests.AirlinesTest">
+                <methods>
+                    <include name="createAirLine"/>
 
-    <test verbose="2" preserve-order="true" name="/Users/sangram.das/GIT/RestAssueredAutomationJenkins">
-
-    <classes><class name="TestCases.MaxPanelAPI">
-        <methods>
-            <include name="validateMaxPanel"/>
-            <include name="maxpanelSchemaValidation"/>
-        </methods></class>
-    </classes>
-</test>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
-

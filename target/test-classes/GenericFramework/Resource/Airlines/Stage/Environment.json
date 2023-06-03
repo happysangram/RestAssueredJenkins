@@ -1,0 +1,6 @@
+{
+  "ENV": "Stage",
+  "AirLineEndpoint": "/airlines",
+  "AirLineBasePath": "/v1"
+
+}

@@ -1,7 +1,7 @@
 package Base;
 
 import Filter.RestAssuredFilter;
-import Utils.PropertiesReader;
+import RestApiUtils.PropertiesReader;
 import org.testng.annotations.BeforeClass;
 
 import java.io.IOException;

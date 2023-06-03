@@ -7,8 +7,6 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
-import java.util.Properties;
-
 public class Specifications extends BaseTest {
 
 
@@ -16,10 +14,9 @@ public class Specifications extends BaseTest {
         RequestSpecification requestSpecification;
         return requestSpecification =RestAssured
                 .given()
-                .baseUri(properties.getProperty("BaseUrl"))
+                .baseUri("https://api.cmh.platform-test2.evinternal.net/")
                 .basePath(BasePath.maxpanel)
                 .contentType(ContentType.JSON)
-                .filter(restAssuredFilter)
                 .log().all();
     }
     public static ResponseSpecification responseSpec(){

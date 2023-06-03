@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="TestCases.MaxPanelAPI" class="method navigator-link" hash-for-method="maxpanelSchemaValidation">maxpanelSchemaValidation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="GenericFramework.Tests.AirlinesTest" class="method navigator-link" hash-for-method="createAirLine">createAirLine</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-All_Test_Suite -->
@@ -121,14 +121,14 @@
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.MaxPanelAPI</span>
+              <span class="class-name">GenericFramework.Tests.AirlinesTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="maxpanelSchemaValidation">
-                  </a> <!-- maxpanelSchemaValidation -->
-                  <span class="method-name">maxpanelSchemaValidation</span>
+                  <a name="createAirLine">
+                  </a> <!-- createAirLine -->
+                  <span class="method-name">createAirLine</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,18 +144,17 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;Listeners.AnnotationTransformer&quot;/&gt;
-    &lt;listener class-name=&quot;Listeners.AnnotationTransformer&quot;/&gt;
+    &lt;listener class-name=&quot;Reporting.TestListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;/Users/sangram.das/GIT/RestAssueredAutomationJenkins&quot; verbose=&quot;2&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;/Users/sangram.das/GIT/RestAssueredAutomationJenkins/src/test/API/GenericFramework/Tests/Airlines.java&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.MaxPanelAPI&quot;&gt;
+      &lt;class name=&quot;GenericFramework.Tests.AirlinesTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;maxpanelSchemaValidation&quot;/&gt;
+          &lt;include name=&quot;createAirLine&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestCases.MaxPanelAPI --&gt;
+      &lt;/class&gt; &lt;!-- GenericFramework.Tests.AirlinesTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- /Users/sangram.das/GIT/RestAssueredAutomationJenkins --&gt;
+  &lt;/test&gt; &lt;!-- /Users/sangram.das/GIT/RestAssueredAutomationJenkins/src/test/API/GenericFramework/Tests/Airlines.java --&gt;
 &lt;/suite&gt; &lt;!-- All Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -167,7 +166,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">/Users/sangram.das/GIT/RestAssueredAutomationJenkins (1 class)</span>
+                <span class="test-name">/Users/sangram.das/GIT/RestAssueredAutomationJenkins/src/test/API/GenericFramework/Tests/Airlines.java (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,14 +194,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'maxpanelSchemaValidation')
-data.setCell(0, 2, 'TestCases.MaxPanelAPI')
-data.setCell(0, 3, 8529);
+data.setCell(0, 1, 'createAirLine')
+data.setCell(0, 2, 'GenericFramework.Tests.AirlinesTest')
+data.setCell(0, 3, 2368);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -221,9 +220,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.MaxPanelAPI</span>
+              <span class="ignored-class-name">GenericFramework.Tests.AirlinesTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">validateMaxPanel</span>
+                <span class="ignored-method-name">createAirLineAsMapPayload</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -235,18 +234,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.MaxPanelAPI</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">before</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              <div class="chronological-class-name">GenericFramework.Tests.AirlinesTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">17 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">maxpanelSchemaValidation</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-name">createAirLine</span>
+                <span class="method-start">21 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
