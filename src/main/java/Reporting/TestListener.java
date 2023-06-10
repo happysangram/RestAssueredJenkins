@@ -21,6 +21,7 @@ public class TestListener implements ITestListener {
     }
 
     public void onFinish(ITestContext context) {
+        extentReports.flush();
 
     }
 
@@ -29,17 +30,6 @@ public class TestListener implements ITestListener {
         extentTestThreadLocal.set(test);
 
     }
-
-    public void onTestSuccess(ITestResult result) {
-        if(extentReports!=null){
-
-            ExtentReportManager.logPassDetails("Info","Bye");
-            extentReports.flush();
-        }
-
-
-    }
-
 
 
 }

@@ -1,6 +1,6 @@
 package RestAPIs;
 
-import Base.BaseTest;
+import Base1.BaseTest;
 import io.restassured.RestAssured;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;

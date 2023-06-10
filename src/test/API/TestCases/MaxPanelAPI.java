@@ -1,7 +1,6 @@
 package TestCases;
 
-import Base.BaseTest;
-import Listeners.RetryAnalyzer;
+import Base1.BaseTest;
 import Payloads.MaxPanelPayload;
 import Pojo.Maxpanel;
 import Pojo.ResponsePojo.Layout;
@@ -11,7 +10,6 @@ import RestAPIs.RestResource;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.apache.commons.io.FileUtils;
 import org.testng.Assert;
@@ -25,8 +23,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class MaxPanelAPI extends BaseTest {
     private Maxpanel maxpanel;

@@ -1,6 +1,5 @@
-package Base;
+package Base1;
 
-import Filter.RestAssuredFilter;
 import RestApiUtils.PropertiesReader;
 import org.testng.annotations.BeforeClass;
 
@@ -9,11 +8,11 @@ import java.util.Properties;
 
 public class BaseTest {
     public static Properties properties;
-    public static RestAssuredFilter restAssuredFilter;
+    //public static RestAssuredFilter restAssuredFilter;
     @BeforeClass
     public void before() throws IOException {
         properties=PropertiesReader.readProperties("/Users/sangram.das/GIT/RestAssueredAutomationJenkins/src/test/resources/config.properties");
-        restAssuredFilter=new RestAssuredFilter();
+        //restAssuredFilter=new RestAssuredFilter();
     }
 
 }
