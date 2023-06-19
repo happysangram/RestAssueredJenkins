@@ -7,10 +7,13 @@
     <test verbose="2" preserve-order="true"
           name="/Users/sangram.das/GIT/RestAssueredAutomationJenkins/src/test/API/GenericFramework/Tests/Airlines.java">
         <classes>
-            <class name="GenericFramework.Tests.AirlinesTest">
+            <class name="GenericFramework.Tests.Testcases.AirlinesTest">
                 <methods>
                     <include name="createAirLine"/>
-
+                    <include name="createAirLineWithPojoResponse"/>
+                    <include name="createAirLineAsMapPayload"/>
+                    <include name="createAirLineFailedCase"/>
+                    <include name="createAirLineWithDataProvider"/>
                 </methods>
             </class>
         </classes>

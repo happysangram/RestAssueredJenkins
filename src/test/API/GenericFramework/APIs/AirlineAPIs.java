@@ -10,7 +10,9 @@ public class AirlineAPIs extends Base {
     public Response createAirline(Object payload){
         String airLineEndpoint= (String) Base.payload.get("AirLineEndpoint");
         String airLineBasePath= (String) Base.payload.get("AirLineBasePath");
-        Response response= RestUtils.POST(airLineEndpoint, airLineBasePath, payload, new HashMap<>());
+        HashMap<String,Object> headers=new HashMap<>();
+        headers.put("Content-Type","application/json");
+        Response response= RestUtils.POST(airLineEndpoint, airLineBasePath, payload, headers);
         return response;
 
     }

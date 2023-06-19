@@ -6,6 +6,8 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import java.util.Arrays;
+
 public class TestListener implements ITestListener {
 
     private static ExtentReports extentReports;
@@ -28,6 +30,16 @@ public class TestListener implements ITestListener {
     public void onTestStart(ITestResult result) {
         ExtentTest test= extentReports.createTest(result.getMethod().getMethodName());
         extentTestThreadLocal.set(test);
+
+    }
+
+    public void onTestFailure(ITestResult result) {
+        ExtentReportManager.logFailDetails(result.getThrowable().getMessage());
+
+        String stackTrace= Arrays.toString(result.getThrowable().getStackTrace());
+        stackTrace=stackTrace.replaceAll(",","<br>");
+        ExtentReportManager.logFailDetails(stackTrace);
+
 
     }
 

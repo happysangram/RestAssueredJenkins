@@ -6,12 +6,12 @@
   </listeners>
   <test thread-count="5" name="/Users/sangram.das/GIT/RestAssueredAutomationJenkins/src/test/API/GenericFramework/Tests/Airlines.java(failed)">
     <classes>
-      <class name="GenericFramework.Tests.AirlinesTest">
+      <class name="GenericFramework.Tests.Testcases.AirlinesTest">
         <methods>
           <include name="createAirLineAsMapPayload"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- GenericFramework.Tests.AirlinesTest -->
+      </class> <!-- GenericFramework.Tests.Testcases.AirlinesTest -->
     </classes>
   </test> <!-- /Users/sangram.das/GIT/RestAssueredAutomationJenkins/src/test/API/GenericFramework/Tests/Airlines.java(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

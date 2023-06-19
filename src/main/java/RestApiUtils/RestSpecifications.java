@@ -6,6 +6,8 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
+import java.util.Map;
+
 public class RestSpecifications  {
 
     private static RequestSpecification requestSpec;
@@ -13,11 +15,13 @@ public class RestSpecifications  {
 
 
 
-    public static RequestSpecification requestSpecification(){
+    public static RequestSpecification requestSpecification(Object body,  Map<String,Object> header){
         return requestSpec= RestAssured
                 .given()
                 .baseUri("https://api.instantwebtools.net")
                 .contentType(ContentType.JSON)
+                .body(body)
+                .headers(header)
                 .log().all();
     }
 

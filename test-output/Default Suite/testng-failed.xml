@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="RestAssueredAutomationJenkins(failed)">
     <classes>
-      <class name="GenericFramework.Tests.AirlinesTest">
+      <class name="GenericFramework.Tests.Testcases.AirlinesTest">
         <methods>
           <include name="createAirLine"/>
           <include name="createAirLineAsMapPayload"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- GenericFramework.Tests.AirlinesTest -->
+      </class> <!-- GenericFramework.Tests.Testcases.AirlinesTest -->
     </classes>
   </test> <!-- RestAssueredAutomationJenkins(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

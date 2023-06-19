@@ -23,7 +23,7 @@ public class StreamMethods {
 
 
         //Map(Function)
-        //     element
+        //     return a element
         //return a value
 
         List<String> list1=List.of("Sad","Aman","Amonda","Balram");
